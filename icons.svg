@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <!-- Logo "cruz/saúde" -->
+    <symbol id="i-logo" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M10 2h4v6h6v4h-6v6h-4v-6H4V8h6z"/>
+    </symbol>
+
+    <!-- Lupa (buscar) -->
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-1.06 1.06l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/>
+    </symbol>
+
+    <!-- Carrinho -->
+    <symbol id="i-cart" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2m10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2M6.2 5l-.4-2H2v2h2l2.6 10.4a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 7H7.4l-.3-2z"/>
+    </symbol>
+
+    <!-- Alto contraste -->
+    <symbol id="i-contrast" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20zM12 4v16a8 8 0 0 1 0-16"/>
+    </symbol>
+
+    <!-- A+ -->
+    <symbol id="i-font-plus" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M3 18l6-14h2l6 14h-2l-1.7-4H6.7L5 18zm4.3-6h5.4L10 6.8zM17 5h2v2h2v2h-2v2h-2V9h-2V7h2z"/>
+    </symbol>
+
+    <!-- A- -->
+    <symbol id="i-font-minus" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M3 18l6-14h2l6 14h-2l-1.7-4H6.7L5 18zm4.3-6h5.4L10 6.8zM15 7h6v2h-6z"/>
+    </symbol>
+
+    <!-- Modo simplificado -->
+    <symbol id="i-simple" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M3 5h18v2H3zM3 11h12v2H3zM3 17h8v2H3z"/>
+    </symbol>
+
+    <!-- Leitura em voz alta -->
+    <symbol id="i-read" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M10 4H4a2 2 0 0 0-2 2v12h2V6h6zm10 14V6a2 2 0 0 0-2-2H8v16h10a2 2 0 0 0 2-2m-7-8h2v6h-2zm4-2h2v8h-2z"/>
+    </symbol>
+
+    <!-- Home -->
+    <symbol id="i-home" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3z"/>
+    </symbol>
+
+    <!-- Produto/frasco -->
+    <symbol id="i-bottle" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M9 3h6v2H9zM8 6h8a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2m2 5v2h2v2h2v-2h2v-2h-2V9h-2v2z"/>
+    </symbol>
+
+    <!-- Remover/excluir -->
+    <symbol id="i-trash" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M9 3h6l1 2h4v2H4V5h4zm1 6h2v8h-2zm4 0h2v8h-2zM6 7h12l-1 12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/>
+    </symbol>
+  </defs>
+</svg>

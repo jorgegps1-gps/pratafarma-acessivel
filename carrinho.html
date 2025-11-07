@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrataFarma Acessível — Carrinho</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header class="topo" role="banner">
+    <div class="marca" aria-label="PrataFarma Acessível">
+      <svg class="icon icon-lg" aria-hidden="true" focusable="false"><use href="icons.svg#i-logo"></use></svg>
+      <strong>PrataFarma <span class="sr-only">Acessível</span></strong>
+    </div>
+
+    <nav class="acoes-acessibilidade" aria-label="Ajustes de acessibilidade">
+      <button id="btn-contraste" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-contrast"></use></svg>
+        <span>Alto contraste</span>
+      </button>
+      <button id="btn-fonte-mais" type="button" aria-label="Aumentar tamanho da fonte">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-font-plus"></use></svg>
+        <span class="sr-only">Aumentar fonte</span>
+      </button>
+      <button id="btn-fonte-menos" type="button" aria-label="Diminuir tamanho da fonte">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-font-minus"></use></svg>
+        <span class="sr-only">Diminuir fonte</span>
+      </button>
+      <button id="btn-simplificado" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-simple"></use></svg>
+        <span>Modo simplificado</span>
+      </button>
+      <button id="btn-ler" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-read"></use></svg>
+        <span>Ler esta página</span>
+      </button>
+    </nav>
+
+    <nav class="menu" aria-label="Navegação principal">
+      <ul>
+        <li>
+          <a href="index.html">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-home"></use></svg>
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="carrinho.html" aria-current="page">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-cart"></use></svg>
+            Carrinho
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal" class="container" role="main">
+    <h1>Carrinho</h1>
+
+    <section class="carrinho" aria-labelledby="titulo-itens">
+      <h2 id="titulo-itens">Itens</h2>
+      <div id="itens-carrinho" class="lista-itens"></div>
+    </section>
+
+    <aside class="resumo" aria-labelledby="titulo-resumo">
+      <h2 id="titulo-resumo">Resumo</h2>
+      <dl class="totais">
+        <div><dt>Total de produtos</dt><dd id="total-produtos">R$ 0,00</dd></div>
+        <div><dt>Frete (estimado)</dt><dd id="frete">R$ 0,00</dd></div>
+        <div class="total"><dt>Total</dt><dd id="total-geral">R$ 0,00</dd></div>
+      </dl>
+
+      <form id="form-frete" class="frete" aria-describedby="ajuda-cep" onsubmit="return false;">
+        <label for="cep">Calcular frete</label>
+        <input id="cep" name="cep" inputmode="numeric" pattern="\d{5}-?\d{3}" placeholder="00000-000" />
+        <button id="btn-calcular-frete" type="button">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-search"></use></svg>
+          Calcular
+        </button>
+        <p id="ajuda-cep" class="ajuda">Digite seu CEP no formato 00000-000.</p>
+      </form>
+
+      <button id="btn-finalizar" class="finalizar" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-cart"></use></svg>
+        Finalizar Compra
+      </button>
+     </aside>
+
+    <div id="live-regiao" class="sr-only" aria-live="polite"></div>
+  </main>
+
+  <footer class="rodape" role="contentinfo">
+    <p>© 2025 PrataFarma Acessível — Projeto Integrador - SENAC EAD.</p>
+    <p>JORGE GABRIEL PEREIRA DOS SANTOS</p>
+<p>RAUL GUILHERME ESTANISLAU</p>
+<p>TAIS LIMA DE ALMEIDA</p>
+<p>VINICIUS ROCHA DONEGA</p>
+<p>EDUARDO ROSSI PIRES JUNIOR</p>
+<p>EDUARDO SOARES DA SILVEIRA</p>
+<p>FELIPE VICENTE DA SILVA</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrataFarma Acessível — Produto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header class="topo" role="banner">
+    <div class="marca" aria-label="PrataFarma Acessível">
+      <svg class="icon icon-lg" aria-hidden="true" focusable="false"><use href="icons.svg#i-logo"></use></svg>
+      <strong>PrataFarma <span class="sr-only">Acessível</span></strong>
+    </div>
+
+    <nav class="acoes-acessibilidade" aria-label="Ajustes de acessibilidade">
+      <button id="btn-contraste" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-contrast"></use></svg>
+        <span>Alto contraste</span>
+      </button>
+      <button id="btn-fonte-mais" type="button" aria-label="Aumentar tamanho da fonte">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-font-plus"></use></svg>
+        <span class="sr-only">Aumentar fonte</span>
+      </button>
+      <button id="btn-fonte-menos" type="button" aria-label="Diminuir tamanho da fonte">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-font-minus"></use></svg>
+        <span class="sr-only">Diminuir fonte</span>
+      </button>
+      <button id="btn-simplificado" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-simple"></use></svg>
+        <span>Modo simplificado</span>
+      </button>
+      <button id="btn-ler" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-read"></use></svg>
+        <span>Ler esta página</span>
+      </button>
+    </nav>
+
+    <nav class="menu" aria-label="Navegação principal">
+      <ul>
+        <li>
+          <a href="index.html">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-home"></use></svg>
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="carrinho.html">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-cart"></use></svg>
+            Carrinho
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal" class="container" role="main">
+    <nav aria-label="Trilha de navegação" class="breadcrumb">
+      <a href="index.html"><svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-home"></use></svg> Início</a> › <span aria-current="page">Produto</span>
+    </nav>
+
+    <article id="produto" class="produto" itemscope itemtype="https://schema.org/Product">
+      <header>
+        <h1 id="produto-nome" itemprop="name">Produto</h1>
+      </header>
+
+      <div class="produto__grid">
+        <figure class="produto__imagem">
+          <img id="produto-imagem" src="" alt="" itemprop="image" />
+          <figcaption class="sr-only" id="produto-imagem-legenda"></figcaption>
+        </figure>
+
+        <section class="produto__detalhes">
+          <p id="produto-descricao" itemprop="description"></p>
+          <ul class="produto__atributos">
+            <li><strong>Categoria:</strong> <span id="produto-categoria"></span></li>
+            <li><strong>Indicação:</strong> <span id="produto-indicacao"></span></li>
+            <li><strong>Restrição:</strong> <span id="produto-restricao"></span></li>
+          </ul>
+
+          <p class="preco">
+            <span class="sr-only">Preço:</span>
+            R$ <span id="produto-preco" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><span itemprop="price"></span></span>
+          </p>
+
+          <form id="form-comprar" class="comprar" aria-describedby="ajuda-quantidade">
+            <label for="qtd">Quantidade</label>
+            <input id="qtd" name="qtd" type="number" inputmode="numeric" min="1" value="1" />
+            <button id="btn-add-carrinho" type="submit">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-cart"></use></svg>
+              Adicionar ao Carrinho
+            </button>
+            <p id="ajuda-quantidade" class="ajuda">Use as setas do teclado para ajustar a quantidade.</p>
+          </form>
+
+          <div id="alerta-receita" class="alerta oculto" role="alert">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="icons.svg#i-bottle"></use></svg>
+            Este item requer receita conforme ANVISA. Compra online desabilitada neste protótipo.
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <section aria-labelledby="titulo-relacionados" class="relacionados">
+      <h2 id="titulo-relacionados">Relacionados</h2>
+      <div id="lista-relacionados" class="grade"></div>
+    </section>
+
+    <div id="live-regiao" class="sr-only" aria-live="polite"></div>
+  </main>
+
+  <footer class="rodape" role="contentinfo">
+    <p>© 2025 PrataFarma Acessível — Projeto Integrador - SENAC EAD.</p>
+    <p>JORGE GABRIEL PEREIRA DOS SANTOS</p>
+<p>RAUL GUILHERME ESTANISLAU</p>
+<p>TAIS LIMA DE ALMEIDA</p>
+<p>VINICIUS ROCHA DONEGA</p>
+<p>EDUARDO ROSSI PIRES JUNIOR</p>
+<p>EDUARDO SOARES DA SILVEIRA</p>
+<p>FELIPE VICENTE DA SILVA</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
